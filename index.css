@@ -3,6 +3,7 @@
     padding: 0;
     font-family: "Catamaran", sans-serif;
 }
+
 /* $blackbg:#0b0c0d; */
 /* $graybg:#25292c; */
 /* $hcolor:#ffffff; */
@@ -40,6 +41,10 @@ a{
     align-items: center;
     height: 76px;
     background-color: black;
+}
+.logo img{
+  height: 20px;
+  width: 104px;
 }
 .custom-btn {
     font-weight: 600;
@@ -93,4 +98,98 @@ a{
 
   .dropdown:hover .dropdown-content {display: block;}
 
-  /* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
+  .fh{
+    font-size: 90px;
+    color: #00d563;
+  }
+  .sh{
+    font-size: 90px;
+    color: #ffffff 
+    /* font-weight: 800; */
+  }
+  .tagline{
+    color: #c1c7d0;
+    font-weight: 800;
+  }
+  .headline{
+    padding-top: 300px;
+    padding-left: 140px;
+  }
+  .banner{
+    height: 360px;
+    background-color: black;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ban{
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  height: 150px; /* Set your desired height */
+  width: 600px;  /* Set your desired width */
+  margin: 0 10px; /* Add some space between the sub-containers */
+  }
+  .green{
+    font-weight: 600;
+    color: #00d563;
+    margin-left: 5px;
+  }
+  #ban1{
+    font-size: 30px;
+  }
+  .main-price{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  background-color: #25292c;
+  }
+  .sub-price{
+  color: #ffffff; 
+  justify-content: center;
+  align-items: center;
+  height: 450px; /* Set your desired height */
+  width: 400px;  /* Set your desired width */
+  margin: 0 10px; /* Add some space between the sub-containers */
+  background-color: black;
+  }
+  .h-price span{
+    display: flex;
+    padding: 30px;
+    color: #00d563;
+    font-size: 30px;
+  }
+  .list-price{
+    text-align: start;
+    height: 220px;
+    padding: 0px 30px 30px; 
+  }
+  .list-price li{
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  .sub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+  .custom-btn2 {
+    padding: 10px 30px;
+    height: 46px;
+    font-size: 14px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: black;
+}
+.custom-btn2:hover {
+    background-color: #00d563;
+    transition: all 0.3s ease;
+    border: 1px solid #00d563;
+    color: black;
+}
