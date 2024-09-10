@@ -133,6 +133,8 @@
   padding-left: 140px;
 }
 
+/* // banner */
+
 .banner {
   height: 360px;
   background-color: black;
@@ -164,7 +166,68 @@
 #ban1 {
   font-size: 30px;
 }
+/* Media Query for tablets (between 768px and 1024px) */
+@media (max-width: 1024px) {
+  .banner {
+    height: 320px;
+    flex-direction: column;
+  }
 
+  .ban {
+    width: 100%;
+    font-size: 16px;
+    height: auto;
+  }
+
+  #ban1 {
+    font-size: 28px;
+  }
+}
+
+/* Media Query for small tablets or large phones (between 600px and 768px) */
+@media (max-width: 768px) {
+  .banner {
+    height: auto;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .ban {
+    width: 100%;
+    font-size: 14px;
+    height: auto;
+  }
+
+  #ban1 {
+    font-size: 24px;
+  }
+}
+
+/* Media Query for mobile devices (below 600px) */
+@media (max-width: 600px) {
+  .banner {
+    height: auto;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .ban {
+    width: 100%;
+    font-size: 12px;
+    height: auto;
+  }
+
+  #ban1 {
+    font-size: 20px;
+  }
+
+  .green {
+    font-size: 12px;
+    margin-left: 2px;
+  }
+}
+
+/* pricing section  */
 .main-price {
   display: flex;
   justify-content: center;
@@ -229,7 +292,42 @@
   border: 1px solid #00d563;
   color: black;
 }
-
+@media (max-width: 600px) {
+  .main-price{
+    flex-direction: column;
+  }
+}
+/* form */
+.main-form {
+  /* height: 100vh; */
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  background-color: #25292c;
+}
+input{
+  border: 1px solid black;
+  color: #ffffff;
+  font-size: 16px;
+  background-color: black;
+  height: 48px;
+  width: 385px;
+}
+input:focus{
+  outline: none;
+}
+input:focus:hover {
+  outline: none;
+}
+input:hover{
+  opacity: 50%;
+}
+.form-con label{
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+}
 /* <!-- Footer --> */
 .footer {
   display: flex;
@@ -307,12 +405,12 @@
 .social a img {
   padding: 10px;
   height: 20px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
   transition: all 0.2s ease;
 }
 
 .social a img:hover {
-  filter: invert(48%) sepia(88%) saturate(3082%) hue-rotate(336deg) brightness(92%) contrast(104%);
+  filter: invert(51%) sepia(78%) saturate(615%) hue-rotate(91deg) brightness(100%) contrast(96%);
 }
 
 .social li {
@@ -326,6 +424,7 @@
 
 .fbtn button {
   padding: 10px;
+  border-radius: 5px;
 }
 
 .fbtn a {
