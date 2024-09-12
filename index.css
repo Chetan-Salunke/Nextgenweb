@@ -59,7 +59,6 @@
   font-size: 16px;
   color: white;
   border: 1px solid white;
-  border-radius: 5px;
   cursor: pointer;
   background-color: black;
 }
@@ -134,122 +133,76 @@
 }
 
 /* // banner */
-
-.banner {
-  height: 360px;
+.banner{   
+  align-items: center; 
+  justify-content: space-evenly;
+  height: 300px;
   background-color: black;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: auto auto;
 }
-
-.ban {
-  display: flex;
+#form-banner{
+  background-color: #25292c;
+}
+.ban{
   font-size: 18px;
-  justify-content: center;
-  align-items: center;
-  height: 150px;
-  /* Set your desired height */
-  width: 600px;
-  /* Set your desired width */
-  margin: 0 10px;
-  /* Add some space between the sub-containers */
+  width: 500px;
+  color: aliceblue;
 }
-
-.green {
-  font-weight: 600;
-  color: #00d563;
-  margin-left: 5px;
-}
-
-#ban1 {
+.spn{
   font-size: 30px;
 }
-/* Media Query for tablets (between 768px and 1024px) */
-@media (max-width: 1024px) {
+#green{
+  color: #00d563;
+}
+@media (max-width: 1200px) {
   .banner {
-    height: 320px;
-    flex-direction: column;
+      grid-template-columns: 1fr; 
+      height: auto; 
+      padding: 40px;
   }
 
   .ban {
-    width: 100%;
-    font-size: 16px;
-    height: auto;
+      width: 100%; 
+      font-size: 18px;
+      padding-top: 15px;
   }
 
-  #ban1 {
-    font-size: 28px;
-  }
-}
-
-/* Media Query for small tablets or large phones (between 600px and 768px) */
-@media (max-width: 768px) {
-  .banner {
-    height: auto;
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .ban {
-    width: 100%;
-    font-size: 14px;
-    height: auto;
-  }
-
-  #ban1 {
-    font-size: 24px;
+  .spn {
+      font-size: 26px;
   }
 }
-
-/* Media Query for mobile devices (below 600px) */
 @media (max-width: 600px) {
   .banner {
-    height: auto;
-    flex-direction: column;
-    padding: 10px;
+      height: 200px;
+      padding: 40px;
   }
-
   .ban {
-    width: 100%;
-    font-size: 12px;
-    height: auto;
+      font-size: 16px;
+      width: 100%;
   }
 
-  #ban1 {
-    font-size: 20px;
-  }
-
-  .green {
-    font-size: 12px;
-    margin-left: 2px;
+  .spn {
+      font-size: 24px;
   }
 }
-
-/* pricing section  */
+/* price-section */
 .main-price {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  /* Full height of the viewport */
+  height: 696px;
   background-color: #25292c;
 }
-
 .sub-price {
   color: #ffffff;
   justify-content: center;
   align-items: center;
   height: 450px;
-  /* Set your desired height */
   width: 400px;
-  /* Set your desired width */
   margin: 0 10px;
-  /* Add some space between the sub-containers */
   background-color: black;
 }
-
 .h-price span {
   display: flex;
   padding: 30px;
@@ -281,7 +234,6 @@
   font-size: 14px;
   color: white;
   border: 1px solid white;
-  border-radius: 5px;
   cursor: pointer;
   background-color: black;
 }
@@ -292,14 +244,30 @@
   border: 1px solid #00d563;
   color: black;
 }
+@media (max-width: 1200px) {
+  .main-price{
+    flex-direction: column;
+    height: auto;
+  }
+  .sub-price{
+      width: 340px;
+      margin: 20px 0 20px 0;
+  }
+}
 @media (max-width: 600px) {
   .main-price{
     flex-direction: column;
+    height: auto;
+  }
+  .sub-price{
+      width: 340px;
+      margin: 20px 0 20px 0;
   }
 }
 /* form */
 .main-form {
-  /* height: 100vh; */
+  align-items: end;
+  padding: 50px 0 100px 0;
   display: grid;
   justify-content: center;
   grid-template-columns: auto auto auto;
@@ -323,11 +291,70 @@ input:focus:hover {
 input:hover{
   opacity: 50%;
 }
-.form-con label{
+label{
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
 }
+.form-btn button{
+  height: 48px;
+  background-color: #00d563;
+  border: 1px solid  #00d563;
+  width: 385px;
+}
+.form-btn button:hover{
+  opacity: 80%;
+}
+.form-btn a{
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+}
+.form-logo{
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 600px) {
+  .main-form{
+      display: block;
+  }
+  input{
+      width: 330px;
+  }
+  .form-box{
+      display: flex;
+      justify-content: center;
+      padding: 8px 0 8px 0;
+  }
+  .form-btn button {
+      margin-top: 10px;
+      width: 330px;
+  }
+  .form-box input {
+      margin-top: 10px;
+  }
+}
+@media (max-width: 1200px){
+  .main-form{
+      display: block;
+  }
+  input{
+      width: 330px;
+  }
+  .form-box{
+      display: flex;
+      justify-content: center;
+      padding: 8px 0 8px 0;
+  }
+  .form-btn button {
+      margin-top: 10px;
+      width: 330px;
+  }
+  .form-box input {
+      margin-top: 10px;
+  }
+}
+
 /* <!-- Footer --> */
 .footer {
   display: flex;
@@ -424,7 +451,6 @@ input:hover{
 
 .fbtn button {
   padding: 10px;
-  border-radius: 5px;
 }
 
 .fbtn a {
