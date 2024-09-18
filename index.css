@@ -27,12 +27,12 @@ body {
   display: inline-block;
   text-decoration: none;
   padding: 12px 34px;
-  font-size: 13px;
+  font-size: 14px;
   background-color: var(--color3);
   position: relative;
   cursor: pointer;
 }
-.hero-btn:hover{
+#hov-btn:hover{
   background: var(--color4);
   transition: 0.5s;
   color: black;
@@ -325,20 +325,17 @@ label{
   font-size: 16px;
   font-weight: 700;
 }
-.form-btn button{
-  height: 48px;
-  background-color: #00d563;
-  border: 1px solid  #00d563;
-  width: 385px;
-}
-.form-btn button:hover{
-  opacity: 80%;
-}
-.form-btn a{
-  font-size: 16px;
-  color: black;
+ .hero-btn-form{
+  font-weight: 600;
+  color: var(--color2);
+  display: inline-block;
   text-decoration: none;
-}
+  padding: 11px 169px;
+  font-size: 16px;
+  background-color: var(--color3);
+  position: relative;
+  cursor: pointer;
+ }
 .form-logo{
   display: flex;
   justify-content: center;
@@ -355,9 +352,9 @@ label{
       justify-content: center;
       padding: 8px 0 8px 0;
   }
-  .form-btn button {
-      margin-top: 10px;
-      width: 330px;
+  .hero-btn-form{
+    padding: 11px 141px;
+    margin-top: 25px;
   }
   .form-box input {
       margin-top: 10px;
@@ -477,24 +474,16 @@ label{
   padding-right: 10px;
 }
 
-.fbtn button {
-  padding: 10px;
-}
-
-.fbtn a {
-  color: black;
+.hero-btn-footer{
+  font-weight: 600;
+  color: var(--color2);
+  display: inline-block;
   text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.fbtn .navbtn {
-  width: 314px;
-}
-.navbtn {
-  color: black;
-  background-color: #00d563;
-  border: 1px solid  #00d563;
+  padding: 12px 130px;
+  font-size: 16px;
+  background-color: var(--color3);
+  position: relative;
+  cursor: pointer;
 }
 
 @media (max-width:600px){
