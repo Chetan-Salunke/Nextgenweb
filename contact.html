@@ -1,12 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact-us</title>
     <link rel="shortcut icon" href="./media/favicon.ico">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
 <body>
-    <h1>contact page section</h1>
+<!-- Navbar -->
+    <nav>
+        <ul class='nav-bar-contact'>
+            <li class='logo'><a href='#'><img src='./media/nextgen.png' /></a></li>
+            <input type='checkbox' id='check' />
+            <span class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <!-- <li><a href="">Services</a></li> -->
+                <li><a href="./clients.html">Clients</a></li>
+                <li><a href="./about-us.html">About us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        </ul>
+    </nav>
+<!-- banner-2 -->
+    <section>
+        <div class="banner" id="form-banner">
+            <div class="ban">
+                <span class="spn">Looking for web development services?</span> <br>
+                <span class="spn" id="green">Talk To Us Anytime</span>
+            </div>
+            <div class="ban">
+                <span>We understand that each business is unique. Our approach involves tailoring our services to match
+                    your specific goals and brand identity. Whether you need a corporate website, ecommerce platform, or
+                    custom web application, we have the expertise to deliver.</span>
+            </div>
+        </div>
+<!-- form -->
+        <div class="form">
+            <form action="https://api.web3forms.com/submit" method="post" class="main-form">
+                <input type="hidden" name="access_key" value="593f69cb-8ced-449d-882a-bd93b41b77d4">
+                <div class="form-box">
+                    <label>First Name*<br>
+                        <input type="text" name="customer_firstname" required>
+                    </label>
+                </div>
+                <div class="form-box">
+                    <label>Last Name*<br>
+                        <input type="text" name="customer_lastname" required>
+                    </label>
+                </div>
+                <div class="form-box">
+                    <label>Email*<br>
+                        <input type="email" name="customer_email" required>
+                    </label>
+                </div>
+                <div class="form-box">
+                    <label>Phone Number*<br>
+                        <input type="tel" name="customer_tel" required>
+                    </label>
+                </div>
+                <div class="form-box">
+                    <label>Company Name<br>
+                        <input type="text" name="customer_tel" required>
+                    </label>
+                </div>
+                <div class="form-box">
+                    <label>How did you hear about us?<br>
+                        <input type="text" name="customer_company" required>
+                    </label>
+                </div>
+                <div class="form-box">
+                    <label>Tell us more about your project*<br>
+                        <input type="text" name="customer_text" required>
+                    </label>
+                </div>
+                <div class="form-box">
+                    <a href="" class="hero-btn-form" id="hov-btn">Submit</a>
+                </div>
+                <div class="form-box">
+                    <div class="form-logo">
+                        <div class="logo"><img src="./media/nextgen.png" alt=""></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+<!-- footer -->
+<footer class="footer">
+    <div class="footerbox">
+        <div class="box">
+            <div class="heading">
+                <div class="logo"><img src="./media/nextgen.png" alt=""></div>
+            </div>
+            <div class="content">
+                <p>E-commerce solutions, portal designing, professional business website, online promotion, online
+                    branding, content writing, graphics designing, site upgradation, computer based presentations,
+                    and
+                    hosting of other value added service.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="heading">
+                <h2>Services</h2>
+            </div>
+            <div class="serv">
+                <img src="./media/bulletpoint.png" alt="" class="navdot">
+                <a href="">
+                    <li>Web Development</li>
+                </a>
+            </div>
+            <div class="serv">
+                <img src="./media/bulletpoint.png" alt="" class="navdot">
+                <a href="">
+                    <li>E Commerce Website</li>
+                </a>
+            </div>
+            <div class="serv">
+                <img src="./media/bulletpoint.png" alt="" class="navdot">
+                <a href="">
+                    <li>Search Engine Optimization</li>
+                </a>
+            </div>
+            <div class="serv">
+                <img src="./media/bulletpoint.png" alt="" class="navdot">
+                <a href="">
+                    <li>Payment Gateway Integration</li>
+                </a>
+            </div>
+            <div class="serv">
+                <img src="./media/bulletpoint.png" alt="" class="navdot">
+                <a href="">
+                    <li>Domain & Hosting</li>
+                </a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="heading">
+                <h2>Newsletter</h2>
+            </div>
+            <div class="serv">
+                <img src="./media/bulletpoint.png" alt="" class="navdot">
+                <a href="">
+                    <li>+91 8308010726</li>
+                </a>
+            </div>
+            <div class="serv">
+                <img src="./media/bulletpoint.png" alt="" class="navdot">
+                <a href="">
+                    <li>nextgenweb.business@gmail.com</li>
+                </a>
+            </div>
+            <div class="fsocial">
+                <div class="social">
+                    <img src="./media/bulletpoint.png" alt="" class="socialimg">
+                    <li>Follow Us : </li>
+                </div>
+                <div class="social">
+                    <a href=""><img src="./media/linkedin-30.png" alt=""></a>
+                    <a href="https://www.instagram.com/nextgenweb.co/"><img src="./media/instagram-30.png" alt=""></a>
+                    <a href=""><img src="./media/twitter-30.png" alt=""></a>
+                </div>
+            </div>
+            <a href="" class="hero-btn-footer" id="hov-btn">Contact</a>
+        </div>
+    </div>
+</footer>
+<!-- Rights-Footer -->
+<footer class="rights-footer">
+    <div class="con1">
+        <p>Copyright &#169; 2024 All rights reserved. Developed at <a href="">Next Gen Web Solutions</a> . Build by
+            <a href="https://chetan-salunke.github.io/Portfolio/">Chetan Salunke</a>
+        </p>
+    </div>
+</footer>
 </body>
+
 </html>

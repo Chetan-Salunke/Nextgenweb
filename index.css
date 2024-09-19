@@ -567,3 +567,17 @@ label{
       padding: 40px;
   }
 }
+
+/* contact page  */
+.nav-bar-contact{
+  background-color: black;
+  font-weight: 600;
+  height: 80px;
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  position: relative;
+  padding: 28px 20px;
+}
