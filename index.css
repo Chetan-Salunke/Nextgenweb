@@ -570,7 +570,7 @@ label{
 
 /* contact page  */
 .nav-bar-contact{
-  background-color: black;
+  background-color: var(--color2);
   font-weight: 600;
   height: 80px;
   /* width: 100%; */
@@ -580,4 +580,21 @@ label{
   list-style: none;
   position: relative;
   padding: 28px 20px;
+}
+
+/* about-us page */
+.banner-about{
+  align-items: center; 
+  justify-content: space-evenly;
+  height: 500px;
+  background-color: var(--color6);
+  display: grid;
+  grid-template-columns: auto auto;
+}
+@media (max-width: 1200px) {
+  .banner-about {
+      grid-template-columns: 1fr; 
+      height: auto; 
+      padding: 40px;
+  }
 }
