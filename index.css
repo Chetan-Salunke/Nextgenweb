@@ -299,6 +299,19 @@ nav .fa{
   cursor: pointer;
   background-color: black;
 }
+@media (max-width: 1200px) {
+  .main-card{
+    flex-direction: column;
+    height: auto;
+  }
+  .sub-card{
+    width: 346px;
+    margin: 20px 0 20px 0;
+  }
+}
+@media (max-width: 600px) {
+  
+}
 /* price-section */
 .main-price {
   display: flex;
@@ -311,7 +324,7 @@ nav .fa{
   color: #ffffff;
   justify-content: center;
   align-items: center;
-  height: 450px;
+  height: 460px;
   width: 400px;
   margin: 0 10px;
   background-color: black;
@@ -325,7 +338,7 @@ nav .fa{
 
 .list-price {
   text-align: start;
-  height: 220px;
+  height: 240px;
   padding: 0px 30px 30px;
 }
 
