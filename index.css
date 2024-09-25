@@ -695,3 +695,82 @@ label{
       padding: 40px;
   }
 }
+
+/* plans-pricing page */
+.main-price-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150vh;
+  background-color: #25292c;
+}
+.sub-price-page {
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  width: 400px;
+  margin: 0 10px;
+  background-color: black;
+}
+.h-price-page span {
+  display: flex;
+  padding: 30px;
+  color: #00d563;
+  font-size: 30px;
+}
+
+.list-price-page {
+  text-align: start;
+  height: 240px;
+  padding: 0px 30px 30px;
+}
+
+.list-price-page li {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.sub-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.custom-btn2-page {
+  padding: 10px 30px;
+  height: 46px;
+  font-size: 14px;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  background-color: black;
+}
+
+.custom-btn2-page:hover {
+  background-color: #00d563;
+  transition: all 0.3s ease;
+  border: 1px solid #00d563;
+  color: black;
+}
+@media (max-width: 1200px) {
+  .main-price-page{
+    flex-direction: column;
+    height: auto;
+  }
+  .sub-price-page{
+      width: 340px;
+      margin: 20px 0 20px 0;
+  }
+}
+@media (max-width: 600px) {
+  .main-price-page{
+    flex-direction: column;
+    height: auto;
+  }
+  .sub-price-page{
+      width: 340px;
+      margin: 20px 0 20px 0;
+  }
+}

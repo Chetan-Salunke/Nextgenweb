@@ -48,7 +48,7 @@
         </div>
 <!-- form -->
         <div class="form">
-            <form action="https://api.web3forms.com/submit" method="post" class="main-form">
+            <form action="https://api.web3forms.com/submit" method="POST" class="main-form">
                 <input type="hidden" name="access_key" value="593f69cb-8ced-449d-882a-bd93b41b77d4">
                 <div class="form-box">
                     <label>First Name*<br>
@@ -86,7 +86,9 @@
                     </label>
                 </div>
                 <div class="form-box">
-                    <a href="" class="hero-btn-form" id="hov-btn">Submit</a>
+                    <!-- <a href="" class="hero-btn-form" id="hov-btn">Submit</a> -->
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                    <button type="submit">Submit Form</button>
                 </div>
                 <div class="form-box">
                     <div class="form-logo">
