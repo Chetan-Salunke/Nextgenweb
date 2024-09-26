@@ -212,6 +212,14 @@ nav .fa{
   width: 500px;
   color: aliceblue;
 }
+.ban a img{
+  height: 75px;
+  width: 80px;
+}
+#client-s{
+  display: flex;
+  justify-content: space-evenly;
+}
 .spn{
   font-size: 30px;
 }
@@ -427,7 +435,7 @@ label{
   color: var(--color2);
   display: inline-block;
   text-decoration: none;
-  padding: 11px 169px;
+  padding: 10px 147px;
   font-size: 16px;
   background-color: var(--color3);
   position: relative;
@@ -450,7 +458,7 @@ label{
       padding: 8px 0 8px 0;
   }
   .hero-btn-form{
-    padding: 11px 141px;
+    padding: 11px 119px;
     margin-top: 25px;
   }
   .form-box input {
